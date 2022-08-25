@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@import "../common/vars.scss";
+
+* {
+  font-family: 'PT Sans', sans-serif;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+a {
+    font-family: "PT Sans";
+    text-decoration: none;
+    color: black;
+    }
+
+
+.wrapper{
+    background-color: rgb(211, 102, 102);
+    width: 100%;
+	max-width: 1140px;
+	margin: 0 auto;
+
+    .navbar{
+        width: 100%;
+
+        ul{
+            list-style:none;
+            display: flex;
+            justify-content: flex-end;
+            li{
+                padding: 5px;
+            }
+        }
+
+    }
+    .image-block{
+        display: flex;
+        
+        .image {
+            max-width: 50%;
+        }
+
+    }
+}
