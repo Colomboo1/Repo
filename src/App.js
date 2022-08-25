@@ -14,11 +14,9 @@ import SelfieGif from './component/SelfieGif';
 const App= () => {
   return (
     <div className='wrapper'>
-      <SelfieGif/>
       <BrowserRouter>
         <div className='navbar'>
           <NavBar />
-          
         </div>
         <div className='image-block'>
           <div className='image'>
