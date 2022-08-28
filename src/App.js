@@ -8,7 +8,7 @@ import AboutMe from './pages/AboutMe';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
 import NavBar from './component/NavBar';
-import Animation from "./component/Animation";
+//import Animation from "./component/Animation";
 import SelfieGif from './component/SelfieGif';
 
 const App= () => {
@@ -20,13 +20,14 @@ const App= () => {
         </div>
         <div className='image-block'>
           <div className='image'>
+            <SelfieGif/>
           </div>
           <div className='block'>
             <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<AboutMe />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/projects" element={<Projects />} /> 
+              <Route path="/" element={<Home />} id="0"/>
+              <Route path="/about" element={<AboutMe />} id="1"/>
+              <Route path="/contact" element={<Contact />} id="2"/>
+              <Route path="/projects" element={<Projects />} id="3"/> 
             </Routes>  
           </div>
         </div>
