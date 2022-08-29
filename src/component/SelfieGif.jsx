@@ -12,21 +12,23 @@ import mocoGif from "../media/animations/mocoGif.gif"
 const SelfieGif = () => {
     let location = useLocation();
     const [picture, setpicture] = useState(homeGif);
-
     const Image = (direction) =>{
         let image=homeGif;
-        if (direction === "/contact") {
-            image = contactGif;
-            
-        }else if (direction === "/about") {
-            image = aboutGif;
-            
-        }else if (direction === "/project") {
-            image = mocoGif;
+        switch (direction) {
+            default:
+                image=homeGif;
+              break;
+            case "/contact":
+                image = contactGif;
+              break;
+            case "/about":
+                image = aboutGif;
+              break;
+            case "/projects":
+                image = mocoGif;
         }
-        
-        setpicture(image);
 
+        setpicture(image);
         return;
     } 
     useEffect(() => {
@@ -34,8 +36,7 @@ const SelfieGif = () => {
         Image(location.pathname) ;    
     }, [location]);
     
-    return (
-       
+    return (  
         <img src={picture} alt="sonrisa" />
     );
 };
