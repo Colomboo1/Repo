@@ -2,28 +2,32 @@
 
 
 * {
-  font-family: 'PT Sans', sans-serif;
-  text-decoration: none;
-  padding: 0;
-  margin: 0;
- // background-image: url("../../media/background2.jpg");
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "PT Sans";
+    background-image: url("../../media/background3.png");
+    
 }
 
-
 a {
-    font-family: "PT Sans";
     text-decoration: none;
     color: black;
     }
 
 
 .wrapper{
-    background-image: url("../../media/background-wrapper2.jpg");
+    background-image: url("../../media/background-wrapper3.jpg");
     width: 100%;
 	width: 800px;
     height: 500px ;
-    margin: 50px auto;
-    border: 10px solid black;
+    margin: 100px auto;
+    border-radius: 2px;
+    box-shadow: 10px 5px 5px rgb(87, 85, 85);
+    box-sizing: border-box;
+    padding: 10px;
     
     
 
@@ -31,11 +35,13 @@ a {
         width: 100%;
 
         ul{
+            text-transform: uppercase;
+            margin: 10px;
             list-style:none;
             display: flex;
             justify-content: flex-end;
             li{
-                padding: 5px;
+                margin:auto 30px; 
             }
         }
 
@@ -50,6 +56,9 @@ a {
         }
         img {
             max-width: 50%;
+            border-radius: 2px;
+            box-shadow: 10px 5px 5px rgb(87, 85, 85);
+            
         }
 
     }
