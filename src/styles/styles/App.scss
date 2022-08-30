@@ -47,15 +47,14 @@ a {
 
     }
     .image-block{
-        width: 100%;
         display: flex;
-        justify-content: space-around;
-    
+        box-sizing: border-box;
+        align-items: center;
         .block {
             max-width: 50%;
         }
         img {
-            max-width: 50%;
+            width: 50%;
             border-radius: 2px;
             box-shadow: 10px 5px 5px rgb(87, 85, 85);
             
