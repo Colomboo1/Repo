@@ -1,4 +1,5 @@
 import React from "react";  
+import "../styles/styles/contact.scss"
 import MailForm from "../component/MailForm";
 import {FaWhatsapp} from 'react-icons/fa';
 import {FaLinkedin} from 'react-icons/fa';
@@ -8,7 +9,7 @@ const Contact = () => {
   return (
     <div>
       <div className="info">
-        <h3>Te paso mi correo asi me escribis y mis datos ya que estamos</h3>
+        <h2>Te paso mi correo y mis datos asi me escribis </h2>
         <div className="icons">
           <a href="https://linkedin.com/in/andres-latorre-tottis" target="_blank" rel="noreferrer">
             <i className="icon-linkedin"><FaLinkedin size={25}/></i>

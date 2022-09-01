@@ -1,8 +1,12 @@
+@import "../common/vars.scss";
+
+.icon{
+  color: $black;
+}
 form{
     
-    .form-mail {
-        display: inline-grid;
-        justify-items: center;
-        width: 100%;
-    }
+  .form-mail {
+    display: flex;
+    flex-direction: column;
+  }
 }

@@ -1,0 +1,15 @@
+@import "../common/vars.scss";
+
+form{
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  label {
+    margin-bottom: 4px;
+  }
+  textarea {
+    margin-bottom: 16px;
+  }
+
+
+}

@@ -4,9 +4,9 @@ import React from 'react';
 const Projects = () => {
   return (
     <div>
-      <h1>Proyectos</h1>
+      <h2>Proyectos</h2>
       <p>
-        estos son mis proyectos
+        te muestro alguna practicas que realice, espero que te
       </p>
     </div>
   );

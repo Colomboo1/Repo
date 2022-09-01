@@ -1,5 +1,6 @@
 import React from 'react';
 import emailjs from '@emailjs/browser';
+import "../styles/styles/mailForm.scss"
 
 export const MailForm = () => {
     async function sendEmail (event) {
@@ -17,7 +18,7 @@ export const MailForm = () => {
           <label>Email</label>
           <input type="email" name='user_email' />
           <label>Mensaje</label>
-          <textarea name="user_message" id="" cols="30" rows="10"></textarea>
+          <textarea name="user_message"></textarea>
           <button>Enviar</button>
         </form>
       )
