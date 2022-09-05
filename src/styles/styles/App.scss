@@ -94,7 +94,7 @@ a {
     );
  
   width: 800px;
-  height: 500px ;
+  height: 550px ;
   margin: 100px auto;
   border-radius: 2px;
   box-shadow: 10px 5px 5px $color1;
@@ -104,12 +104,11 @@ a {
 
     ul{
       text-transform: uppercase;
-      margin: 10px;
       list-style:none;
       display: flex;
       justify-content: flex-end;
       li{
-        margin:auto 30px; 
+        margin:auto 16px; 
       }
     }
   }

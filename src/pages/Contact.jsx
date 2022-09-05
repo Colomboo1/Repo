@@ -12,13 +12,13 @@ const Contact = () => {
         <h2>Te paso mi correo y mis datos asi me escribis </h2>
         <div className="icons">
           <a href="https://linkedin.com/in/andres-latorre-tottis" target="_blank" rel="noreferrer">
-            <i className="icon-linkedin"><FaLinkedin size={25}/></i>
+            <i ><FaLinkedin size={32}/></i>
           </a>
           <a href="https://github.com/Colomboo1" target="_blank" rel="noreferrer">
-            <i className="icon-github"><FaGithub size={25}/></i>
+            <i ><FaGithub size={32}/></i>
           </a>
           <a href="https://wa.me/+543513763357" target="_blank" rel="noreferrer">
-            <i className="icon-whatsapp"><FaWhatsapp size={25} /></i>
+            <i ><FaWhatsapp size={32} /></i>
           </a>
         </div>
       </div>

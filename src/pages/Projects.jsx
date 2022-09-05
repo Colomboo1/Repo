@@ -25,12 +25,12 @@ const slidesInfo = [
 const Projects= () => {
   return (
     <div className="projects">
-      <h3>Algunos de mis proyectos...</h3>
+      <h2>Algunos de mis proyectos...</h2>
       <Carousel plugins={['arrows','infinite',]}>
         {slidesInfo.map(el => (
           <div className="slider-container">
             <img src={el.src} alt={el.alt}/>
-            <a href={el.desc} className='button'>ver</a>
+            <a href={el.desc} className='button' target="_blank">ver</a>
           </div>
         ))}
       </Carousel>  
