@@ -2,13 +2,13 @@
 @import "../common/vars.scss";
 
 * {
-    text-decoration: none;
-    padding: 0;
-    margin: 0;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
 }
 body{
-    font-family: "PT Sans";
-    background-image: url("../../media/background3.png");
+  font-family: "PT Sans";
+  background-image: url("../../media/background3.png");
     
 }
 
@@ -22,17 +22,17 @@ p {
 }
 
 button, .button {
-    text-decoration: none;
-    text-transform: uppercase;
-    border: none;
-    background: none;
-    line-height: 50px;
-    text-align: center;
-    cursor: pointer;
-    color: $color1;
-    transition: all 0.5s;
-    position: relative;
-    background-color: $color4;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  background: none;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+  color: $color1;
+  transition: all 0.5s;
+  position: relative;
+  background-color: $color4;
   
   &::before {
     content: '';
@@ -70,51 +70,61 @@ button, .button {
 
 a {
   color: black;
-    text-decoration: none;
-    text-transform: uppercase;
-    }
-
+  text-decoration: none;
+  text-transform: uppercase;
+  }
 
 .wrapper{
-    background-image: url("../../media/background-wrapper3.jpg");
-	  width: 800px;
-    height: 500px ;
-    margin: 100px auto;
-    border-radius: 2px;
-    box-shadow: 10px 5px 5px #575555;
-    box-sizing: border-box;
-    padding: 10px;
-    
-    
+  background-image:
+    linear-gradient(
+      to left, 
+      #c6c6c6 20%,
+      #aaaaaa 20%,
+      #aaaaaa 40%,
+      #aaaaaa 60%,
+      #6f6f6f 40%,
+      #6f6f6f 40%
+    );
+  //background-image: url("../../media/background-wrapper3.jpg");
+  
+  width: 800px;
+  height: 500px ;
+  margin: 100px auto;
+  border-radius: 2px;
+  box-shadow: 10px 5px 5px #575555;
+  box-sizing: border-box;
+  padding: 10px;
+  .navbar{
+    width: 100%;
 
-    .navbar{
-        width: 100%;
-
-        ul{
-            text-transform: uppercase;
-            margin: 10px;
-            list-style:none;
-            display: flex;
-            justify-content: flex-end;
-            li{
-                margin:auto 30px; 
-            }
-        }
-
-    }
-    .image-block{
+    ul{
+      text-transform: uppercase;
+      margin: 10px;
+      list-style:none;
       display: flex;
+      justify-content: flex-end;
+      li{
+        margin:auto 30px; 
+      }
+    }
+  }
+  .image-block{
+    display: flex;
     box-sizing: border-box;
     align-items: center;
-        .block {
-            max-width: 50%;
-        }
-        img {
-            width: 50%;
-            border-radius: 2px;
-            box-shadow: 10px 5px 5px #575555;
-            
-        }
 
+    .block {
+      max-width: 50%;
+      padding: 40px;
     }
+    .image{
+      padding: 20px;
+      max-width: 30%;
+      img {
+        width: 100%;
+        border-radius: 2px;
+        box-shadow: 10px 5px 5px #575555;
+      }
+    }         
+  }
 }

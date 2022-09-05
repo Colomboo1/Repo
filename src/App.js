@@ -8,7 +8,6 @@ import AboutMe from './pages/AboutMe';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
 import NavBar from './component/NavBar';
-//import Animation from "./component/Animation";
 import SelfieGif from './component/SelfieGif';
 
 const App= () => {
