@@ -3,8 +3,6 @@ import '../styles/styles/Projects.scss';
 import Carousel from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css";
 
-
-
 const slidesInfo = [
   {
     src:"https://i.ibb.co/ZNjmnZ2/pergoliana.jpg",
@@ -24,19 +22,19 @@ const slidesInfo = [
 ];
 
 
-
 const Projects= () => {
   return (
-    <Carousel plugins={['arrows','infinite','centered']}>
-      {slidesInfo.map(el => (
-        <div className="slider-container">
-          <img src={el.src} alt={el.alt}/>
-          <div className="slide-desc">
-            <a href={el.desc} className='link'>ver</a>
+    <div className="projects">
+      <h3>Algunos de mis proyectos...</h3>
+      <Carousel plugins={['arrows','infinite',]}>
+        {slidesInfo.map(el => (
+          <div className="slider-container">
+            <img src={el.src} alt={el.alt}/>
+            <a href={el.desc} className='button'>ver</a>
           </div>
-        </div>
-      ))}
-    </Carousel>  
+        ))}
+      </Carousel>  
+    </div>
   );
 }
     

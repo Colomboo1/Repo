@@ -2,6 +2,7 @@
 @import "../common/vars.scss";
 
 * {
+  
   text-decoration: none;
   padding: 0;
   margin: 0;
@@ -9,7 +10,7 @@
 body{
   font-family: "PT Sans";
   background-image: url("../../media/background3.png");
-    
+  
 }
 
 h2 {
@@ -66,33 +67,37 @@ button, .button {
     opacity: 1;
     transform: scale(1,1);
   }
+  
 }
 
 a {
   color: black;
   text-decoration: none;
   text-transform: uppercase;
+  &.button {
+    display: block;
+    line-height: 30px;
   }
+}
 
 .wrapper{
+  box-sizing: border-box;
   background-image:
-    linear-gradient(
+  linear-gradient(
       to left, 
-      #c6c6c6 20%,
-      #aaaaaa 20%,
-      #aaaaaa 40%,
-      #aaaaaa 60%,
-      #6f6f6f 40%,
-      #6f6f6f 40%
+      $color3 20%,
+      $color2 20%,
+      $color2 40%,
+      $color2 60%,
+      $color1 40%,
+      $color1 40%
     );
-  //background-image: url("../../media/background-wrapper3.jpg");
-  
+ 
   width: 800px;
   height: 500px ;
   margin: 100px auto;
   border-radius: 2px;
-  box-shadow: 10px 5px 5px #575555;
-  box-sizing: border-box;
+  box-shadow: 10px 5px 5px $color1;
   padding: 10px;
   .navbar{
     width: 100%;
@@ -123,8 +128,16 @@ a {
       img {
         width: 100%;
         border-radius: 2px;
-        box-shadow: 10px 5px 5px #575555;
+        box-shadow: 10px 5px 5px $color1;
       }
     }         
+  }
+
+  .BrainhubCarousel__arrows {
+    border-radius: 3px;
+    background-color:$color3;
+    &:hover:enabled {
+      background-color: $color2;
+    }
   }
 }
