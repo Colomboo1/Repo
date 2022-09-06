@@ -1,14 +1,12 @@
 import React from 'react';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-
-import "./styles/styles/App.scss"
-
 import Home from './pages/Home';
 import AboutMe from './pages/AboutMe';
 import Contact from './pages/Contact';
 import Projects from './pages/Projects';
 import NavBar from './component/NavBar';
 import SelfieGif from './component/SelfieGif';
+import "./styles/styles/App.scss"
 
 const App= () => {
   return (

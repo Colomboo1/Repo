@@ -1,23 +1,23 @@
 import React from 'react';
-import '../styles/styles/Projects.scss';
 import Carousel from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css";
+import '../styles/styles/Projects.scss';
 
 const slidesInfo = [
   {
     src:"https://i.ibb.co/ZNjmnZ2/pergoliana.jpg",
-    alt:"proyecto1",
+    alt:"Proyecto\"La Pergoliana\"",
     desc:"https://andres-latorre-la-pergoliana.vercel.app/"
   },
   {
     src:"https://i.ibb.co/sHx0bw0/stahl-prato.jpg",
-    alt:"proyecto2",
+    alt:"Proyecto\" Stahl & Prato\"",
     desc:"https://stahl-prato.vercel.app/"
   },
   {
     src:"https://i.ibb.co/0Jd6ccQ/comercial-web.jpg",
-    alt:"proyecto3",
-    desc:"comercial-web.vercel.app"
+    alt:"Proyecto \"Comercial web\"",
+    desc:"https://comercial-web.vercel.app"
   },
 ];
 
@@ -30,7 +30,7 @@ const Projects= () => {
         {slidesInfo.map(el => (
           <div className="slider-container">
             <img src={el.src} alt={el.alt}/>
-            <a href={el.desc} className='button' target="_blank">ver</a>
+            <a href={el.desc} className='button' target="_blank" rel="noreferrer">ver</a>
           </div>
         ))}
       </Carousel>  

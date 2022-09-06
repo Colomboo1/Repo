@@ -1,17 +1,19 @@
 @import "../common/vars.scss";
 
 form{
-  text-transform: uppercase;
   display: flex;
   flex-direction: column;
   label {
     margin-bottom: 4px;
   }
+
   input{
     padding: 5px;
+    font-family: "PT Sans";
     text-transform: uppercase;
     margin-bottom: 8px;
   }
+
   textarea {
     margin-bottom: 16px;
     text-transform: uppercase;
@@ -20,7 +22,4 @@ form{
     margin-bottom: 8px;
     height: 50px;
   }
-
-
-
 }

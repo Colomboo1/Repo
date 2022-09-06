@@ -1,11 +1,10 @@
 import React from "react";
 import CV from '../media/CV.pdf';
-import "../styles/styles/AboutMe.scss"
 
 const AboutMe = () => {
   return (
     <div className="about-me">
-      <h2>Acerca de mi</h2>
+      <h2>Sobre mi</h2>
       <p>
         Tengo 31 años soy tecnico superior en mecatronica en la UTN Cordoba y 
         perfeccione mis conocimientos al area de automacion industriales,
