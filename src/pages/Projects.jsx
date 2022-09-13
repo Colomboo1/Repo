@@ -2,25 +2,7 @@ import React from 'react';
 import Carousel from "@brainhubeu/react-carousel";
 import "@brainhubeu/react-carousel/lib/style.css";
 import '../styles/styles/Projects.scss';
-
-const slidesInfo = [
-  {
-    src:"https://i.ibb.co/ZNjmnZ2/pergoliana.jpg",
-    alt:"Proyecto\"La Pergoliana\"",
-    desc:"https://andres-latorre-la-pergoliana.vercel.app/"
-  },
-  {
-    src:"https://i.ibb.co/sHx0bw0/stahl-prato.jpg",
-    alt:"Proyecto\" Stahl & Prato\"",
-    desc:"https://stahl-prato.vercel.app/"
-  },
-  {
-    src:"https://i.ibb.co/0Jd6ccQ/comercial-web.jpg",
-    alt:"Proyecto \"Comercial web\"",
-    desc:"https://comercial-web.vercel.app"
-  },
-];
-
+import { slidesInfo } from '../component/SlidesInfo';
 
 const Projects= () => {
   return (

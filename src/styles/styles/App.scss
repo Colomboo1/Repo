@@ -10,7 +10,7 @@
 body{
   font-family: "PT Sans";
   text-transform: uppercase;
-  background-image: url("../../media/background3.png");
+  background-color: $color2;
   
 }
 
@@ -98,7 +98,7 @@ button, .button {
       );
   width: 800px;
   height: 550px ;
-  margin: 100px auto;
+  margin: 5% auto;
   border-radius: 2px;
   box-shadow: 10px 5px 5px $color1;
   padding: 10px;
@@ -141,5 +141,38 @@ button, .button {
     &:hover:enabled {
       background-color: $color2;
     }
+  }
+}
+
+
+@media (max-width: 800px) {
+  .wrapper{
+    margin: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .wrapper{
+    margin: auto;
+    width: 400px;
+    height: 200px ;
+  
+  }
+  .image-block{
+    display: block;
+    box-sizing: border-box;
+    .block {
+      max-width: 50%;
+      padding: auto;
+    }
+    .image{
+      padding: auto;
+      max-width: 30%;
+      img {
+        width: 50%;
+        border-radius: 2px;
+        box-shadow: 10px 5px 5px $color1;
+      }
+    }  
   }
 }
